@@ -19,40 +19,50 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
     color: white;
-    padding: 80px 20px;
+    padding: 100px 20px 80px;
     text-align: center;
+    border-bottom: 4px solid #8b5cf6;
 }
 
 .main-title {
     font-family: 'Georgia', 'Times New Roman', serif;
-    font-size: 3.5rem;
-    margin-bottom: 15px;
+    font-size: 4rem;
+    margin-bottom: 20px;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
 }
 
 .tagline {
-    font-size: 1.3rem;
-    max-width: 800px;
+    font-size: 1.4rem;
+    max-width: 700px;
     margin: 0 auto;
     opacity: 0.95;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 /* Image Section */
 .image-section {
-    background-color: #f8f9fa;
-    padding: 60px 20px;
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 50px 20px;
     text-align: center;
 }
 
 .main-image {
-    max-width: 100%;
+    max-width: 400px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    max-height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    max-height: 400px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.02);
 }
 
 .image-caption {
@@ -70,10 +80,21 @@ body {
 
 .section-title {
     font-family: 'Georgia', 'Times New Roman', serif;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-align: center;
-    margin-bottom: 40px;
-    color: #667eea;
+    margin-bottom: 50px;
+    color: #4f46e5;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    margin: 15px auto 0;
+    border-radius: 2px;
 }
 
 .biography-content p {
@@ -112,9 +133,16 @@ body {
 .timeline-content {
     flex: 1;
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #7c3aed;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-content h3 {
@@ -131,9 +159,11 @@ body {
 
 /* Quote Section */
 .quote-section {
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-    padding: 80px 20px;
+    background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+    padding: 90px 20px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .quote {
@@ -144,15 +174,29 @@ body {
 
 .quote-text {
     font-family: 'Georgia', 'Times New Roman', serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: italic;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-text::before {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    opacity: 0.3;
+    z-index: -1;
 }
 
 .quote-author {
-    font-size: 1.2rem;
-    opacity: 0.9;
+    font-size: 1.3rem;
+    opacity: 0.95;
+    font-weight: 500;
+    margin-top: 15px;
 }
 
 /* Footer Section */

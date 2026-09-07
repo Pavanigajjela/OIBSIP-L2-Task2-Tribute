@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Title Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .title-card {
+            background: white;
+            padding: 60px 80px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .icon {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .divider {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            margin: 0 auto 20px;
+            border-radius: 2px;
+        }
+
+        .track {
+            font-size: 1.2rem;
+            color: #764ba2;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .task {
+            font-size: 1.5rem;
+            color: #667eea;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .title-card {
+                padding: 40px 50px;
+            }
+
+            .name {
+                font-size: 2.2rem;
+            }
+
+            .track {
+                font-size: 1rem;
+                letter-spacing: 2px;
+            }
+
+            .task {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title-card {
+                padding: 30px 40px;
+            }
+
+            .name {
+                font-size: 1.8rem;
+            }
+
+            .track {
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+            }
+
+            .task {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-card">
+        <div class="icon">&lt;/&gt;</div>
+        <h1 class="name">Pavani Gajjela</h1>
+        <div class="divider"></div>
+        <p class="track">WEB DEVELOPMENT & DESIGNING</p>
+        <p class="task">Tribute</p>
+    </div>
+</body>
+</html>

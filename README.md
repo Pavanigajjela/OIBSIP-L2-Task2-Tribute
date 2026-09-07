@@ -62,6 +62,14 @@ TributePage/
 - Tablet: 768px and below
 - Mobile: 480px and below
 
+## Output Screenshots
+
+### Desktop View
+![Screenshot 1](screenshot1.png)
+
+### Mobile View
+![Screenshot 2](screenshot2.png)
+
 ## Image Credits
 
 Portrait of Marie Curie sourced from Science Photo Library:

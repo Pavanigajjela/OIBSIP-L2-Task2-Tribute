@@ -64,8 +64,8 @@ TributePage/
 
 ## Image Credits
 
-Portrait of Marie Curie sourced from Unsplash:
-https://images.unsplash.com/photo-1576086213369-97a306d36557
+Portrait of Marie Curie sourced from Science Photo Library:
+https://media.sciencephoto.com/image/c0031534/800wm/C0031534-Marie_Curie.jpg
 
 ## Research Sources
 

@@ -41,8 +41,10 @@ This project is a tribute page created as part of the OIBSIP Level 2 Task 2 assi
 
 ```
 TributePage/
-├── index.html          # Main HTML file
+├── index.html          # Main HTML file with title card overlay
 ├── styles.css          # CSS styling
+├── screenshot1.png     # Desktop view screenshot
+├── screenshot2.png     # Mobile view screenshot
 └── README.md           # Project documentation
 ```
 

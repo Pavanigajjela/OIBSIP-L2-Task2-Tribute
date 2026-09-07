@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero-section">
+    <!-- Title Card Overlay -->
+    <div id="title-card" class="title-card-overlay">
+        <div class="title-card">
+            <div class="icon">&lt;/&gt;</div>
+            <h1 class="name">Pavani Gajjela</h1>
+            <div class="divider"></div>
+            <p class="track">WEB DEVELOPMENT & DESIGNING</p>
+            <p class="task">Tribute</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content-wrapper" style="display: none;">
+        <header class="hero-section">
         <div class="container">
             <h1 class="main-title">Marie Curie</h1>
             <p class="tagline">The first woman to win a Nobel Prize and the only person to win in two different scientific fields</p>
@@ -100,5 +113,13 @@
             <p class="footer-text">A tribute to Marie Curie (1867-1934) - A pioneer who changed the world of science forever.</p>
         </div>
     </footer>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById('title-card').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }, 2000);
+    </script>
 </body>
 </html>
